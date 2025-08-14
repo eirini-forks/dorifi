@@ -79,9 +79,9 @@ func logHandler(w http.ResponseWriter, r *http.Request) {
 func helloWorldHandler(arg string) func(w http.ResponseWriter, _ *http.Request) {
 	return func(w http.ResponseWriter, _ *http.Request) {
 		if arg == "" {
-			fmt.Fprintln(w, "Hi, I'm really Dorifi!")
+			fmt.Fprintln(w, "Hi, I'm really really Dorifi!")
 		} else {
-			fmt.Fprintf(w, "Hi, I'm really Dorifi (%s)!\n", arg)
+			fmt.Fprintf(w, "Hi, I'm really really Dorifi (%s)!\n", arg)
 		}
 	}
 }
